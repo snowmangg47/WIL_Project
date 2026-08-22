@@ -9,9 +9,14 @@ Note: This repository contains all utility code for 'Behind The Scenes' of Waler
 
 ## intent-based
 
+Contains the Alexa-based intent implementation of Walert, including the interaction models for the supported locales and the Lambda handlers that map intents to responses.
 
 ## nlg
 
+Contains the response generation and evaluation code used for Walert's NLG experiments, including Falcon generation, ROUGE, BLEU, BERTScore, and the end-to-end statistical evaluation.
 
 ## retrieval
 
+Contains the BM25 and dense retrieval reproduction pipeline, the local text-based RAG system, and the original voice demonstration pipeline.
+
+See `retrieval/README.md` for retrieval usage and reproduction instructions.
