@@ -3,13 +3,13 @@ import pandas as pd
 # Load the evaluation results
 
 # Intent-Based results
-intent_based = pd.read_csv(r"C:\Users\jxjh1\OneDrive\Documents\g\WIL_Project\quantitative_eval\target\summaries\walert_eval.csv")
+intent_based = pd.read_csv("walert_eval.csv")
 
 # RAG results using BM25
-bm25 = pd.read_csv(r"C:\Users\jxjh1\OneDrive\Documents\g\WIL_Project\quantitative_eval\target\summaries\falcon_bm25_eval.csv")
+bm25 = pd.read_csv("falcon_bm25_eval.csv")
 
 # RAG results using dense vector retrieval with FAISS
-dense_faiss = pd.read_csv(r"C:\Users\jxjh1\OneDrive\Documents\g\WIL_Project\quantitative_eval\target\summaries\falcon_dense_eval.csv")
+dense_faiss = pd.read_csv("falcon_dense_eval.csv")
 
 
 # Function for the intent-based approach to calculate the avg. evaluation score
