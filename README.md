@@ -1,22 +1,13 @@
+# Group 13
+1) Bilal Mohammed Beg (s42153546)
+2) Hajar Al Gheilani (s4204060)
+3) Samuel Amrita (s4200649)
+4) Axa Gemini Lakra (s4225641)
+5) Jagiello (s4216579)
+
+
+
 # Walert - A Conversational Agent
-
-We built Walert, a conversational agent that answers FAQs about programs of study that are offered in the School of Computing Technologies at RMIT University. This intent-based approach, deployed in Amazon Echo device, was showcased as a demo at RMIT University’s Open Day in August 2023.
-
-Teaser Video: https://drive.google.com/file/d/1Z2ZRveFYlX96v4ncq4RL-gzNbOlCJYGL/view?usp=sharing
-
-Amazon Echo Demo Link: https://bit.ly/chiir24walertdemovideo
-
-Demo Video Link (Intent-Based version deployed on Amazon Echo Device): https://bit.ly/WalertIntentDemo
-
-Demo Video Link (Retrieval Augmented Generation based version): https://bit.ly/WalertRAGDemo
-
-You can view our poster presented at CHIIR24:  [Walert Poster](https://github.com/sachinpc1993/walert/blob/main/Poster.pdf) 
-
-![Overall Architecture](OVERALL_ARCHITECTURE.PNG)
-
-Note: This repository contains all utility code for 'Behind The Scenes' of Walert.
-
-You will find in **quantitative_eval** folder all the required codes and files to rerun the experiments in the paper. 
 
 ## Setup
 
