@@ -20,9 +20,7 @@ For Apple Silicon Macs:
 ```bash
 python -m pip install mlx-lm==0.31.3
 
-brew install libomp pcre
-
-python -m pip install faiss-cpu==1.14.3
+conda install -c conda-forge faiss-cpu=1.14.3 pytorch=2.10.0 -y
 conda install -c conda-forge lxml=4.9.3 -y
 conda install -c conda-forge lightgbm -y
 
