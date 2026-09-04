@@ -29,13 +29,13 @@ echo "Corpus:     ${CORPUS}"
 echo "Embeddings: ${EMBEDDINGS}"
 
 python -m pyserini.encode \
- input   --corpus $CORPUS  \
+ input   --corpus "${CORPUS}"  \
           --fields text \
           --shard-id 0 \
           --shard-num 1 \
-  output  --embeddings $EMBEDDINGS \
+  output  --embeddings "${EMBEDDINGS}" \
             --to-faiss \
-  encoder --encoder castorini/$ENCODER \
+  encoder --encoder "castorini/${ENCODER}" \
           --fields text \
           --batch 32 \
           --device cpu

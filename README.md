@@ -12,14 +12,17 @@
 ## First-Time Setup
 The model we are running is located in the `quantitative_eval` directory and we first create the environment
 ```bash
-conda create -n group13rag python=3.9 -y
+conda create -n group13rag python=3.12.9 -y 
+conda activate group13rag
 ```
 
 For Apple Silicon Macs: 
 ```bash
-python -m pip install mlx-lm
+python -m pip install mlx-lm==0.31.3
+
 brew install libomp pcre
-conda install -c conda-forge faiss-cpu=1.7.4 -y
+
+python -m pip install faiss-cpu==1.14.3
 conda install -c conda-forge lxml=4.9.3 -y
 conda install -c conda-forge lightgbm -y
 
@@ -31,6 +34,7 @@ Run the following in PowerShell:
 ```bash
 conda install -c conda-forge lxml=4.9.3 lightgbm faiss-cpu -y
 ```
+
 
 Then we need to download the dependencies:
 ```bash
