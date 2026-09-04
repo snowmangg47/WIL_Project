@@ -9,46 +9,61 @@
 
 # Walert - A Conversational Agent
 
-## Setup
-
-Install the Python dependencies from the `quantitative_eval` directory:
-
+## First-Time Setup
+The model we are running is located in the `quantitative_eval` directory and we first create the environment
 ```bash
-cd quantitative_eval
+conda create -n group13rag python=3.9 -y
+```
+
+For Apple Silicon Macs: 
+```bash
+python -m pip install mlx-lm
+brew install libomp pcre
+conda install -c conda-forge faiss-cpu=1.7.4 -y
+conda install -c conda-forge lxml=4.9.3 -y
+conda install -c conda-forge lightgbm -y
+
+# Note: the current local --chat implementation is designed for Apple Silicon because it uses MLX.
+```
+
+Windows
+Run the following in PowerShell:
+```bash
+conda install -c conda-forge lxml=4.9.3 lightgbm faiss-cpu -y
+```
+
+Then we need to download the dependencies:
+```bash
+cd quantitative_eval # Put the quantitative eval filepath here c: 
 python -m pip install -r requirements.txt
 ```
 
-The NLG evaluation uses NLTK tokenization for BLEU. Download the required tokenizer data once:
+Install Java
+Walert uses Pyserini/PyJNIus, which require a Java Development Kit (JDK).
+```bash
+conda install -c conda-forge openjdk=21.0.10 -y
+```
 
+Download the NLTK Tokenizer Data
 ```bash
 python -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
 ```
 
-The end-to-end statistical evaluation is implemented in R and requires `dplyr`:
-
+## Quick Start
 ```bash
-conda install -c conda-forge r-base r-dplyr
+cd quantitative_eval # Put the quantitative eval filepath here c: 
+conda activate group13rag
+
+src/retrieval/main.sh
+python src/retrieval/RAG_SYSTEM.py --chat
 ```
 
-Run the statistical evaluation from the `quantitative_eval` directory:
-
-```bash
-(cd src/nlg && Rscript end2end_eval.R)
-```
 
 # Evaluation Results
-NDCG for Known and Inferred Questions
-![NDCG](Evaluation_results/1.png)
-
-% of unanswered out-of-knowledge-base questions 
-![unanswere](Evaluation_results/2.png)
-
-BERTScore
-![BERTScore](Evaluation_results/3.png)
+Template here:
+![Results](example.png)
 
 
-ROUGE-1
-![ROUGE](Evaluation_results/4.png)
 
 
 

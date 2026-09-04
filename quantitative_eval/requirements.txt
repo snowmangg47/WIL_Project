@@ -1,5 +1,5 @@
 annotated-types==0.5.0
-autocast==0.0.1b1
+# autocast==0.0.1b1
 beautifulsoup4==4.12.2
 blis==0.7.11
 catalogue==2.0.10
@@ -16,7 +16,7 @@ cramjam==2.7.0
 cycler==0.12.1
 cymem==2.0.8
 Cython==3.0.3
-faiss==1.7.4
+# faiss==1.7.4
 fastparquet==2023.8.0
 filelock==3.12.4
 flatbuffers==23.5.26
@@ -111,4 +111,4 @@ zlib-state==0.1.6
 rouge==1.0.1
 
 bert-score==0.3.13
-nltk==3.9.4
+nltk==3.9.1
