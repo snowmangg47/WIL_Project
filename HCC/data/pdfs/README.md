@@ -1,1 +1,1 @@
-PDF contains raw health cover information. Yet, it currently has additional information that won't be necessary for the project. So, we will extract what is relevant and create json files for each health insurer with the concise information. 
+PDF contains raw health cover information. Yet, it currently has additional information that won't be necessary for the project. So, we will extract what is relevant and create json/csv files for each health insurer with the concise information. 
