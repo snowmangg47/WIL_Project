@@ -3,7 +3,7 @@
 2) Hajar Al Gheilani (s4204060)
 3) Samuel Amrita (s4200649)
 4) Axa Gemini Lakra (s4225641)
-5) Jagiello (s4216579)
+5) Emily Jagiello (s4216579)
 
 
 
