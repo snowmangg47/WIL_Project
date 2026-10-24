@@ -1,0 +1,12 @@
+pypdf
+sentence-transformers
+faiss-cpu
+numpy
+ollama
+pandas
+bert-score
+rouge-score
+tabulate
+matplotlib
+rank-bm25
+streamlit
